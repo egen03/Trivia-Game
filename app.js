@@ -21,3 +21,35 @@ console.log('working')
 
 // 1. Design buttons with hover effect
 // 2. Animate right and wrong choice selections
+
+
+// ----------------------------------------------------------------------------------
+
+// Classes for Player 1 
+
+class Player1 {
+    constructor() {
+
+    }
+
+// method to choose answer
+    selectAnswer () {
+
+    }
+}
+
+// -----------------------------------------------------------
+
+
+// Class for Player 2
+
+class Player2 {
+    constructor() {
+
+    }
+    
+// method to choose answer
+    chooseAnswer() {
+
+    }
+}
