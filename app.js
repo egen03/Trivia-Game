@@ -34,7 +34,11 @@ class Player1 {
 
 // method to choose answer
     selectAnswer () {
-
+        if (answer === true) {
+            return correct;
+        } else {
+            return wrong;
+        }
     }
 }
 
@@ -47,7 +51,7 @@ class Player2 {
     constructor() {
 
     }
-    
+
 // method to choose answer
     chooseAnswer() {
 
