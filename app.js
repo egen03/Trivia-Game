@@ -4,7 +4,7 @@ console.log('working')
 
 // Javascript
 
-// 1. Create classes for Player 1, Player 2, answering questions right or wrong*
+// 1. Create classes for Player 1, Player 2, answering questions right or wrong*, next question
 // 2. Create methods for getting question right or wrong.
 // 3. Create loops for multiple choice conditions
 // 4. Create way to log results to keep score

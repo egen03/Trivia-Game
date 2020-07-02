@@ -1,0 +1,26 @@
+.parent{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    border: red solid;
+    padding: 20px;
+}
+
+.questions{
+    border: steelblue solid;
+    padding: 20px;
+}
+
+.answers{
+    border: tan solid;
+    padding: 20px;
+}
+
+.score{
+    border: tomato solid;
+    padding: 20px;
+
+}
