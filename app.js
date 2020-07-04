@@ -77,6 +77,22 @@ let questions = [
     }
 ],
 
+// Create ability to keep score
+let score = 0;
+
+// use for loop to loop thru questions.
+
+for (let i=0; i < questions.length; i++){
+    let answer = ;
+    if(answer == ) {
+        score ++;
+        alert ('Correct!');
+    }else {
+        alert('Try Again!');
+    }
+}
+
+
 
 
 
