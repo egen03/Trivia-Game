@@ -55,7 +55,18 @@ function answer4() {
 }
 
 // ------------------------------------------------------
+// Start Game button functionality 
 
+// let start = document.getElementById('startbtn')
+// let questions = document.getElementById('')
+// start.addEventListener('click', startGame)
+
+// function startGame() {
+//     console.log('Begin!')
+//     start.classList.add('hide')
+    
+// }
+//-------------------------------------------------------
 // Reset button functionality
 
 function resetGame() {
@@ -65,32 +76,32 @@ function resetGame() {
 
 // Create questions. Use array for creating multiple questions as an object.
 
-let questions = [
-    {
-        question1: 'What is 1 + 1 ?'
-    },
-    {
-        question2: 'What is 2 + 2 ?'
-    },
-    {
-        question3: 'What is 3 + 3 ?'
-    }
-],
+// let questions = [
+//     {
+//         question1: 'What is 1 + 1 ?'
+//     },
+//     {
+//         question2: 'What is 2 + 2 ?'
+//     },
+//     {
+//         question3: 'What is 3 + 3 ?'
+//     }
+// ],
 
-// Create ability to keep score
-let score = 0;
+// // Create ability to keep score
+// let score = 0;
 
-// use for loop to loop thru questions.
+// // use for loop to loop thru questions.
 
-for (let i=0; i < questions.length; i++){
-    let answer = ;
-    if(answer == ) {
-        score ++;
-        alert ('Correct!');
-    }else {
-        alert('Try Again!');
-    }
-}
+// for (let i=0; i < questions.length; i++){
+//     let answer = ;
+//     if(answer == ) {
+//         score ++;
+//         alert ('Correct!');
+//     }else {
+//         alert('Try Again!');
+//     }
+// }
 
 
 
