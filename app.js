@@ -25,6 +25,12 @@ console.log('working')
 
 // ----------------------------------------------------------------------------------
 
+function answer1() {
+    let answer = alert('right')
+    document.getElementById('a').innerHTML = answer;
+    
+}
+
 // Classes for Player 1 
 
 class Player1 {
@@ -33,13 +39,20 @@ class Player1 {
     }
 
 // method to choose answer
-    selectAnswer () {
-        if (answer === true) {
-            return correct;
-        } else {
-            return wrong;
-        }
-    }
+    // selectAnswer () {
+    //     if (answer === true) {
+    //         return correct;
+    //     } else {
+    //         return wrong;
+    //     }
+    // }
+
+// method to click answer
+    // function clickEvent() {
+    //     let answer = 'true'
+    //     document.getElementById('a').innerHTML = alert('Correct');
+        
+    // }
 }
 
 // -----------------------------------------------------------
