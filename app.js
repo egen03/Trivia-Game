@@ -57,15 +57,15 @@ function answer4() {
 // ------------------------------------------------------
 // Start Game button functionality 
 
-// let start = document.getElementById('startbtn')
-// let questions = document.getElementById('')
-// start.addEventListener('click', startGame)
+let start = document.getElementById('startbtn')
+let questions = document.getElementById('')
+start.addEventListener('click', startGame)
 
-// function startGame() {
-//     console.log('Begin!')
-//     start.classList.add('hide')
+function startGame() {
+    console.log('Begin!')
+    start.classList.add('hide')
     
-// }
+}
 //-------------------------------------------------------
 // Reset button functionality
 
