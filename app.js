@@ -4,6 +4,10 @@ console.log('working')
 
 // Javascript
 
+// 1. Create functionality for buttons
+// 2. Create questions.
+//      - 3. Use loop to go thru questions
+
 // 1. Create classes for Player 1, Player 2, answering questions right or wrong*, next question
 // 2. Create methods for getting question right or wrong.
 // 3. Create loops for multiple choice conditions
@@ -58,6 +62,34 @@ function resetGame() {
     document.location.reload(true);
 }
 // ------------------------------------------------------
+
+// Create questions. Use array for creating multiple questions as an object.
+
+let questions = [
+    {
+        question1: 'What is 1 + 1 ?'
+    },
+    {
+        question2: 'What is 2 + 2 ?'
+    },
+    {
+        question3: 'What is 3 + 3 ?'
+    }
+],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Classes for Player 1 
 
