@@ -30,6 +30,7 @@ function answer1() {
     document.getElementById('a').innerHTML = answer;
     
 }
+// ------------------------------------------------------
 
 // Classes for Player 1 
 
@@ -53,6 +54,10 @@ class Player1 {
     //     document.getElementById('a').innerHTML = alert('Correct');
         
     // }
+
+//  method to switch turns
+    switchTurns() {}
+
 }
 
 // -----------------------------------------------------------
@@ -69,4 +74,14 @@ class Player2 {
     chooseAnswer() {
 
     }
+}
+// --------------------------------------------------------
+
+// how i will switch turns:
+
+let player1Turn
+
+function switchTurns() {
+    player1Turn = !player1Turn
+    
 }
