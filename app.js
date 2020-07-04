@@ -30,6 +30,24 @@ function answer1() {
     document.getElementById('a').innerHTML = answer;
     
 }
+
+function answer2() {
+    let answer = alert('wrong')
+    document.getElementById('a').innerHTML = answer;
+    
+}
+
+function answer3() {
+    let answer = alert('wrong')
+    document.getElementById('a').innerHTML = answer;
+    
+}
+
+function answer4() {
+    let answer = alert('wrong')
+    document.getElementById('a').innerHTML = answer;
+    
+}
 // ------------------------------------------------------
 
 // Classes for Player 1 
