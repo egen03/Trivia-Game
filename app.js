@@ -25,6 +25,7 @@ console.log('working')
 
 // ----------------------------------------------------------------------------------
 
+// Button functionality
 function answer1() {
     let answer = alert('right')
     document.getElementById('a').innerHTML = answer;
@@ -47,6 +48,14 @@ function answer4() {
     let answer = alert('wrong')
     document.getElementById('a').innerHTML = answer;
     
+}
+
+// ------------------------------------------------------
+
+// Reset button functionality
+
+function resetGame() {
+    document.location.reload(true);
 }
 // ------------------------------------------------------
 
@@ -103,3 +112,8 @@ function switchTurns() {
     player1Turn = !player1Turn
     
 }
+
+// funcion resetGame() {
+//     location.reload();
+// }
+
