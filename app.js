@@ -29,6 +29,17 @@ console.log('working')
 
 // ----------------------------------------------------------------------------------
 
+// Start Game button functionality 
+
+let start = document.getElementById('start');
+
+function initialize() {
+   
+    start.style.display = 'none'
+    
+}
+// -----------------------------------------------------------------------------
+
 // Button functionality
 function answer1() {
     let answer = alert('right')
@@ -54,16 +65,6 @@ function answer4() {
     
 }
 
-// ------------------------------------------------------
-// Start Game button functionality 
-
-let start = document.getElementById('start');
-
-function initialize() {
-   
-    start.style.display = 'none'
-    
-}
 //-------------------------------------------------------
 // Reset button functionality
 
@@ -174,3 +175,25 @@ function switchTurns() {
 //     location.reload();
 // }
 
+questions [
+    {
+        Question: What does Hakuna Matata mean?
+        Answer: No worries.
+    },
+    {
+        Question: How many Muses are in Hercules?
+        Answer: Five.
+    },
+    {
+        Question: Who is the fashion designer in The Incredibles?
+        Answer: Edna Mode.
+    },
+    {
+        Question: Which Full House character voices Aladdin?
+        Answer: Steve.
+    },
+    {
+        Question: What name does Mulan pick for herself while pretending to be a man?
+        Answer: Ping.
+    }
+]
