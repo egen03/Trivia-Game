@@ -119,10 +119,10 @@ function resetGame() {
 
 // Classes for Player 1 
 
-class Player1 {
-    constructor() {
+// class Player1 {
+//     constructor() {
 
-    }
+//     }
 
 // method to choose answer
     // selectAnswer () {
@@ -141,59 +141,69 @@ class Player1 {
     // }
 
 //  method to switch turns
-    switchTurns() {}
+//     switchTurns() {}
 
-}
+// }
 
 // -----------------------------------------------------------
 
 
 // Class for Player 2
 
-class Player2 {
-    constructor() {
+// class Player2 {
+//     constructor() {
 
-    }
+//     }
 
-// method to choose answer
-    chooseAnswer() {
+// // method to choose answer
+//     chooseAnswer() {
 
-    }
-}
+//     }
+// }
 // --------------------------------------------------------
 
 // how i will switch turns:
 
-let player1Turn
+// let player1Turn
 
-function switchTurns() {
-    player1Turn = !player1Turn
+// function switchTurns() {
+//     player1Turn = !player1Turn
     
-}
+// }
 
 // funcion resetGame() {
 //     location.reload();
 // }
 
-questions [
-    {
-        Question: What does Hakuna Matata mean?
-        Answer: No worries.
-    },
-    {
-        Question: How many Muses are in Hercules?
-        Answer: Five.
-    },
-    {
-        Question: Who is the fashion designer in The Incredibles?
-        Answer: Edna Mode.
-    },
-    {
-        Question: Which Full House character voices Aladdin?
-        Answer: Steve.
-    },
-    {
-        Question: What name does Mulan pick for herself while pretending to be a man?
-        Answer: Ping.
-    }
+var questions = [
+        'Question: What does Hakuna Matata mean?',
+        'Question: How many Muses are in Hercules?',
+        'Question: Who is the fashion designer in The Incredibles?',
+        'Question: Which Full House character voices Aladdin?',
+        'Question: What name does Mulan pick for herself while pretending to be a man?',
+        'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
 ]
+
+function loadQuestion() {
+    let randomQuestion = Math.floor(Math.random() * questions.length);
+    document.getElementById('questions').innerHTML = questions[randomQuestion];
+    
+}
+    loadQuestion(); 
+
+
+
+// 'Question: Who is the fashion designer in The Incredibles?'
+// // Answer: Edna Mode.
+// ,
+
+// 'Question: Which Full House character voices Aladdin?'
+// // Answer: Steve.
+// ,
+
+// 'Question: What name does Mulan pick for herself while pretending to be a man?'
+// // Answer: Ping.
+// ,
+
+// 'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
+// // Answer: Max.
