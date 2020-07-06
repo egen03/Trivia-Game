@@ -95,11 +95,11 @@ function loadQuestion() {
     let randomQuestion = Math.floor(Math.random() * questions.length);
     document.getElementById('questions').innerHTML = questions[randomQuestion];
 
+// Create loop to generate random answers within question array 
     for (var i = 0; i < 4; i++) {
         document.getElementById('answer1' + i).innerHTML = answers[randomQuestion][i];
     }
 }
-
 
 // call function
 
@@ -110,8 +110,11 @@ loadQuestion();
 
 var answers = [
     'No Problem', 'No Worries', 'No Trouble', 'No Drama',
-    'Five', 'Eight', 'Three', 'Six'
-    'Edna Mose', 'Mrs. Incredible', 'Edna Mode', ''
+    'Five', 'Eight', 'Three', 'Six',
+    'Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule',
+    'Kimmy', 'D.J.', 'Stephanie', 'Steve',
+    'Ping', 'Lee', 'Mushu', 'Poe',
+    'Sebastian', 'Scuttles', 'Max', 'Flounder'
 ];
 
 function Answers() {
@@ -122,9 +125,9 @@ function Answers() {
 
 // ----------------------------------------
 
-function check() {
-    var 
-}
+// function check() {
+//     var 
+// }
 
 // answers();
 // // Create ability to keep score
