@@ -4,7 +4,7 @@ console.log('working')
 
 // Javascript
 
-// 1. Create functionality for buttons
+// 1. Create functionality for buttons (player one, player two, play again)
 // 2. Create questions.
 //      - 3. Use array to store quiz questions
 //      - 4. Use math.floor to load questions in random order
@@ -30,11 +30,14 @@ console.log('working')
 
 // -------------------------------------------------------------
 
-// player one button propmts name on click
+// player one button propmts name on click. Will tell player they go first.
+
 function playerOne() {
     var name = prompt("What is your name");
     alert ('Welcome ' + name + '.' + ' You go first!' );
 }
+
+// player two button will ask for your name
 
 function playerTwo() {
     var name = prompt("What is your name");
@@ -64,7 +67,6 @@ function resetGame() {
 // ------------------------------------------------------
 
 
-
 var a;
 
 function hide() {
@@ -76,63 +78,56 @@ function hide() {
         return a = 1;
     }
 }
-// let Player1 = {
-//     constructor (name, click){
-//         this.name = name;
-//         this.click = click;
-//     }
 
-//     display() {
-//         console.log()alert(`${this.name}` + ' goes first!')
-//     }
-// }
-
-// display();
-
-// class Player2 {
-//     constructor (name, click){
-//         this.name = name;
-//         this.click = click;
-//     }
-// }
-
-// let GameStart = {
-//     gameStart: function(classType){
-//         this.setPlayer(classType);
-//     },
-//     setPlayer: function(classType) {
-//         switch (classType) {
-//             case 'Player1':
-//                 player1 = new Player1(classType);
-//                 break;
-//             case 'Player2':
-//                 player2 = new Player2(classType);
-//                 break;
-                
-//         }
-//     }
-// }
 
 // ------------------------------------------------------
 
 // Create questions. Use array for creating multiple questions as an object.
 
 var questions = [
-    'Question: What does Hakuna Matata mean?',
-    'Question: How many Muses are in Hercules?',
-    'Question: Who is the fashion designer in The Incredibles?',
-    'Question: Which Full House character voices Aladdin?',
-    'Question: What name does Mulan pick for herself while pretending to be a man?',
-    'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
+    'Question: What does Hakuna Matata mean?', // 0 (Index values- helpful when determining which question i will randomly load)
+    'Question: How many Muses are in Hercules?', // 1
+    'Question: Who is the fashion designer in The Incredibles?', // 2
+    'Question: Which Full House character voices Aladdin?', // 3
+    'Question: What name does Mulan pick for herself while pretending to be a man?', // 4
+    'Question: What is the name of Prince Eric’s dog in The Little Mermaid?' // 5
 ]
 
 var answers = [
-    ['No Problem', 'No Worries', 'No Trouble', 'No Drama'],
-    ['Five', 'Eight', 'Three', 'Six'],
-    ['Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule'],
-    ['Kimmy', 'D.J.', 'Stephanie', 'Steve'],
-    ['Ping', 'Lee', 'Mushu', 'Poe'],
-    ['Sebastian', 'Scuttles', 'Max', 'Flounder']
+    ['No Problem', // 0 (index values- helpful when determining which answer is the correct choice)
+    'No Worries', // 1
+    'No Trouble', // 2
+    'No Drama'],  // 3
+
+
+    ['Five', // 0
+    'Eight', // 1
+    'Three', // 2
+    'Six'], // 3
+
+
+    ['Edna Mose', // 0
+    'Mrs. Incredible', // 1
+    'Edna Mode', // 2
+    'Edna Mule'], // 3
+
+
+    ['Kimmy', // 0
+    'D.J.', // 1
+    'Stephanie', // 2
+    'Steve'], // 3
+
+
+    ['Ping', // 0
+    'Lee', // 1
+    'Mushu', // 2
+    'Poe'], // 3
+
+
+    ['Sebastian', // 0
+    'Scuttles', // 1
+    'Max', // 2
+    'Flounder'] // 3
 ];
 
 // ------------------------------------------------------
@@ -239,5 +234,8 @@ function choice() {
 
 
 
+// =========================RESOURCES===========================
 
 // https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
+
+// https://stackoverflow.com/questions/37287093/starting-a-javascript-prompt-after-a-button-is-clicked/37287126
