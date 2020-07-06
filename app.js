@@ -33,12 +33,12 @@ console.log('working')
 // player one button propmts name on click
 function playerOne() {
     var name = prompt("What is your name");
-    alert ('Welcome ' + name + ' You go first!' );
+    alert ('Welcome ' + name + '.' + ' You go first!' );
 }
 
 function playerTwo() {
     var name = prompt("What is your name");
-    alert ('Welcome ' + name +  );
+    alert ('Welcome ' + name + '.' + ' Player One goes first.' );
 }
 
 
