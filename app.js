@@ -107,7 +107,7 @@ function loadQuestion() {
 // Create loop to generate random answer options of the questions array
 
     for (var i = 0; i < 4; i++) {
-        document.getElementById('answer0').innerHTML = answers[randomQuestion];
+        document.getElementById('answer'+i).innerHTML = answers[randomQuestion][i];
     }
 }
 
