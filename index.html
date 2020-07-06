@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- <div id='startGame'>
-        <button id='start' onclick='initialize()'>Start Game</button>
-        
-    </div> -->
-   
+     
     <div class="parent">
 
     <div id="startGame"> 
             <h1>Erica's Trivia Game</h1>
             <p><h3>Welcome! Choose which player</h3></p>
             <br>
-            <button onclick="display()"><h4>Player One</h4></button>
-            <button onclick="GameStart.setPlayer('Player2')"><h4>Player Two</h4></button><br><br>
-            
-                <button id='start' onclick='initialize()'>Start Game</button>
+
+            <div>
+            <button onclick="playerOne()"><h4>Player One</h4></button>
+            <button onclick="playerTwo()"><h4>Player Two</h4></button><br><br>
+            </div>
+
+            <button id='start' onclick='initialize()'><h4>Start Game</h4></button>
                 
            
     </div>
