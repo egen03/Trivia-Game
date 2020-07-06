@@ -87,6 +87,15 @@ var questions = [
     'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
 ]
 
+var answers = [
+    ['No Problem', 'No Worries', 'No Trouble', 'No Drama'],
+    ['Five', 'Eight', 'Three', 'Six'],
+    ['Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule'],
+    ['Kimmy', 'D.J.', 'Stephanie', 'Steve'],
+    ['Ping', 'Lee', 'Mushu', 'Poe'],
+    ['Sebastian', 'Scuttles', 'Max', 'Flounder']
+];
+
 // Create a function to be able to load question. Use math.random
 
 var randomQuestion = 0;
@@ -95,9 +104,10 @@ function loadQuestion() {
     let randomQuestion = Math.floor(Math.random() * questions.length);
     document.getElementById('questions').innerHTML = questions[randomQuestion];
 
-// Create loop to generate random answers within question array 
+// Create loop to generate random answer options of the questions array
+
     for (var i = 0; i < 4; i++) {
-        document.getElementById('answer1' + i).innerHTML = answers[randomQuestion][i];
+        document.getElementById('answer0').innerHTML = answers[randomQuestion];
     }
 }
 
@@ -106,16 +116,16 @@ function loadQuestion() {
 loadQuestion(); 
 //--------------------------------------------------------------
 
-// Answers
+// Create a nested array for answers
 
-var answers = [
-    'No Problem', 'No Worries', 'No Trouble', 'No Drama',
-    'Five', 'Eight', 'Three', 'Six',
-    'Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule',
-    'Kimmy', 'D.J.', 'Stephanie', 'Steve',
-    'Ping', 'Lee', 'Mushu', 'Poe',
-    'Sebastian', 'Scuttles', 'Max', 'Flounder'
-];
+// var answers = [
+//     ['No Problem', 'No Worries', 'No Trouble', 'No Drama'],
+//     ['Five', 'Eight', 'Three', 'Six'],
+//     ['Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule'],
+//     ['Kimmy', 'D.J.', 'Stephanie', 'Steve'],
+//     ['Ping', 'Lee', 'Mushu', 'Poe'],
+//     ['Sebastian', 'Scuttles', 'Max', 'Flounder']
+// ];
 
 function Answers() {
     var randomAnswer = Math.floor(Math.random() * (answers.length));

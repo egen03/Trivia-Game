@@ -24,25 +24,24 @@
 
     <div class="answers"> This is will the answers will go <br><br>
 
-            <label>
-                <input type="radio">
+            
+                <input type="radio" name="choice" value="0"></input>
+                <p id="answer0"></p>
+            
+            
+                <input type="radio" name="choice" value="1">
                 <p id="answer1"></p>
-            </label>
-            <label>
-                <input type="radio">
+            
+           
+                <input type="radio" name="choice" value="2">
                 <p id="answer2"></p>
-            </label>
-            <label>
-                <input type="radio">
+           
+            
+                <input type="radio" name="choice" value="3">
                 <p id="answer3"></p>
-            </label>
-            <label>
-                <input type="radio">
-                <p id="answer4"></p>
-            </label>
-            <!-- <button id="b" onclick="answer2()">Answer 2</button>
-            <button id="c" onclick="answer3()">Answer 3</button>
-            <button id="d" onclick="answer4()">Answer 4</button> -->
+            
+            <button onclick="submit()">Submit</button>
+            
     </div>
 
         <div class="score">The score will go here</div>
