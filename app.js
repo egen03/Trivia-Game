@@ -94,28 +94,68 @@ loadQuestion();
 // Submit answer choice. See which choice that was chosen is right/wrong
 
 function submit() {
-    for (var i = 0; i < 4; i++) {
-        if(document.getElementById('answer' + i).submited){
-            var answer = document.getElementById('option' + i). value;
-        } 
-}
+     for (var i = 0; i < 4; i++) {
+         if(document.getElementById('answer' + i).submited){
+             var answer = document.getElementById('option' + i).value;
+         } 
+ }
+
+//  Create conditions to check if answer choices are right or wrong
+
+         if(randomQuestion == 0) {
+             if(answer == 1){
+             document.getElementById('results').innerHtml = 'Correct';
+         } else {
+            document.getElementById('results').innerHtml = 'Wrong';
+
+        }
+        }
+
+        if(randomQuestion == 1) {
+            if(answer == 0){
+                document.getElementById('results').innerHtml = 'Correct';
+            } else {
+                document.getElementById('results').innerHtml = 'Wrong';
+
+        }
+        }
+
+        if(randomQuestion == 2) {
+            if(answer == 2){
+                document.getElementById('results').innerHtml = 'Correct';
+            } else {
+                document.getElementById('results').innerHtml = 'Wrong';
+
+            }
+            }
+        if(randomQuestion == 3) {
+            if(answer == 3){
+                document.getElementById('results').innerHtml = 'Correct';
+            } else {
+                document.getElementById('results').innerHtml = 'Wrong';
     
+            }
+            }
+        if(randomQuestion == 4) {
+            if(answer == 0){
+                document.getElementById('results').innerHtml = 'Correct';
+            } else {
+                document.getElementById('results').innerHtml = 'Wrong';
+        
+            }
+            }
+
+        if(randomQuestion == 5) {
+            if(answer == 2){
+                document.getElementById('results').innerHtml = 'Correct';
+            } else {
+                document.getElementById('results').innerHtml = 'Wrong';
+            
+            }
+            }
+
 }
-// answers();
-// // Create ability to keep score
-// let score = 0;
 
-// // use for loop to loop thru questions.
-
-// for (let i=0; i < questions.length; i++){
-//     let answer = ;
-//     if(answer == ) {
-//         score ++;
-//         alert ('Correct!');
-//     }else {
-//         alert('Try Again!');
-//     }
-// }
 
 
 
