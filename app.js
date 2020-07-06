@@ -81,29 +81,37 @@ function resetGame() {
 var questions = [
     'Question: What does Hakuna Matata mean?',
     'Question: How many Muses are in Hercules?',
-    // 'Question: Who is the fashion designer in The Incredibles?',
-    // 'Question: Which Full House character voices Aladdin?',
-    // 'Question: What name does Mulan pick for herself while pretending to be a man?',
-    // 'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
+    'Question: Who is the fashion designer in The Incredibles?',
+    'Question: Which Full House character voices Aladdin?',
+    'Question: What name does Mulan pick for herself while pretending to be a man?',
+    'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
 ]
 
 // Create a function to be able to load question. Use math.random
 
+var randomQuestion = 0;
+
 function loadQuestion() {
     let randomQuestion = Math.floor(Math.random() * questions.length);
     document.getElementById('questions').innerHTML = questions[randomQuestion];
+
+    for (var i = 0; i < 4; i++) {
+        document.getElementById('answer1' + i).innerHTML = answers[randomQuestion][i];
+    }
 }
+
 
 // call function
 
 loadQuestion(); 
-//---------------------------------------------------------------------------------
+//--------------------------------------------------------------
 
 // Answers
 
 var answers = [
     'No Problem', 'No Worries', 'No Trouble', 'No Drama',
     'Five', 'Eight', 'Three', 'Six'
+    'Edna Mose', 'Mrs. Incredible', 'Edna Mode', ''
 ];
 
 function Answers() {
@@ -112,9 +120,11 @@ function Answers() {
     
 }
 
-// for (var i = 0; i < 2; i++) {
-//     document.getElementById('answer1' + i).innerHTML = answers[randomQuestion][i];
-// }
+// ----------------------------------------
+
+function check() {
+    var 
+}
 
 // answers();
 // // Create ability to keep score
