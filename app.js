@@ -130,6 +130,9 @@ var answers = [
     'Flounder'] // 3
 ];
 
+
+var score = 0;
+
 // ------------------------------------------------------
 
 // Create a function to be able to show questions randomly. Use math.random
@@ -167,6 +170,7 @@ function choice() {
     if(randomQuestion == 0) { // question in array 0
          if(answers == 1){  // correct answer is choice in index 1
             document.getElementById('submit').innerHtml = alert('Correct');
+            score++;
          }else {
         document.getElementById('submit').innerHtml = alert('Wrong');
       }
@@ -175,6 +179,7 @@ function choice() {
     if(randomQuestion == 1) {
             if(answers == 0){
                 document.getElementById('results').innerHtml = alert('Correct');
+                score++;
             } else {
                 document.getElementById('results').innerHtml = alert('Wrong');
 
@@ -184,6 +189,7 @@ function choice() {
     if(randomQuestion == 2) {
                 if(answers == 2){
                     document.getElementById('results').innerHtml = alert('Correct');
+                    score++;
                 } else {
                     document.getElementById('results').innerHtml = alert('Wrong');
     
@@ -193,6 +199,7 @@ function choice() {
                 if(randomQuestion == 3) {
                         if(answers == 3){
                             document.getElementById('results').innerHtml = alert('Correct');
+                            score++;
                         } else {
                             document.getElementById('results').innerHtml = alert('Wrong');
                 
@@ -201,18 +208,20 @@ function choice() {
 
                 if(randomQuestion == 4) {
                     if(answers == 0){
-                document.getElementById('results').innerHtml = alert('Correct');
+                        document.getElementById('results').innerHtml = alert('Correct');
+                        score++;
                     } else {
-                document.getElementById('results').innerHtml = alert('Wrong');
+                        document.getElementById('results').innerHtml = alert('Wrong');
         
                         }
                         }
 
                 if(randomQuestion == 5) {
                     if(answers == 2){
-                document.getElementById('results').innerHtml = alert('Correct');
+                        document.getElementById('results').innerHtml = alert('Correct');
+                        score++;
                     } else {
-                document.getElementById('results').innerHtml = alert('Wrong');
+                        document.getElementById('results').innerHtml = alert('Wrong');
             
                     }
                     }
@@ -223,9 +232,7 @@ function choice() {
 
 // -----------------------------------------------
 
-// function to switch turns and set win conditions
-// let Player1 = 'Me'
-// let Player2 = 'You'
+// Score
 
 
 
