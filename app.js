@@ -6,14 +6,17 @@ console.log('working')
 
 // 1. Create functionality for buttons
 // 2. Create questions.
-//      - 3. Use loop to go thru questions
+//      - 3. Use array to store quiz questions
+//      - 4. Use math.floor to load questions in random order
+// 5. Create answers.
+//      - 6. Used nested arrays to store answers.
 
 // 1. Create classes for Player 1, Player 2, answering questions right or wrong*, next question
 // 2. Create methods for getting question right or wrong.
 // 3. Create loops for multiple choice conditions
 // 4. Create way to log results to keep score
 // 5. Create way to alternate between players
-// 6. Create way to reset game
+// 6. Create way to reset game/
 
 // HTML
 
@@ -41,11 +44,11 @@ function initialize() {
 // -----------------------------------------------------------------------------
 
 // Button functionality
-function answer1() {
-    let answer = alert('right')
-    document.getElementById('a').innerHTML = answer;
+// function answer1() {
+//     let answer = alert('right')
+//     document.getElementById('a').innerHTML = answer;
     
-}
+// }
 
 function answer2() {
     let answer = alert('wrong')
@@ -75,18 +78,45 @@ function resetGame() {
 
 // Create questions. Use array for creating multiple questions as an object.
 
-// let questions = [
-//     {
-//         question1: 'What is 1 + 1 ?'
-//     },
-//     {
-//         question2: 'What is 2 + 2 ?'
-//     },
-//     {
-//         question3: 'What is 3 + 3 ?'
-//     }
-// ],
+var questions = [
+    'Question: What does Hakuna Matata mean?',
+    'Question: How many Muses are in Hercules?',
+    // 'Question: Who is the fashion designer in The Incredibles?',
+    // 'Question: Which Full House character voices Aladdin?',
+    // 'Question: What name does Mulan pick for herself while pretending to be a man?',
+    // 'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
+]
 
+// Create a function to be able to load question. Use math.random
+
+function loadQuestion() {
+    let randomQuestion = Math.floor(Math.random() * questions.length);
+    document.getElementById('questions').innerHTML = questions[randomQuestion];
+}
+
+// call function
+
+loadQuestion(); 
+//---------------------------------------------------------------------------------
+
+// Answers
+
+var answers = [
+    'No Problem', 'No Worries', 'No Trouble', 'No Drama',
+    'Five', 'Eight', 'Three', 'Six'
+];
+
+function Answers() {
+    var randomAnswer = Math.floor(Math.random() * (answers.length));
+    document.getElementById('answerA').innerHTML = answers[randomAnswer];
+    
+}
+
+// for (var i = 0; i < 2; i++) {
+//     document.getElementById('answer1' + i).innerHTML = answers[randomQuestion][i];
+// }
+
+// answers();
 // // Create ability to keep score
 // let score = 0;
 
@@ -171,39 +201,4 @@ function resetGame() {
     
 // }
 
-// funcion resetGame() {
-//     location.reload();
-// }
 
-var questions = [
-        'Question: What does Hakuna Matata mean?',
-        'Question: How many Muses are in Hercules?',
-        'Question: Who is the fashion designer in The Incredibles?',
-        'Question: Which Full House character voices Aladdin?',
-        'Question: What name does Mulan pick for herself while pretending to be a man?',
-        'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
-]
-
-function loadQuestion() {
-    let randomQuestion = Math.floor(Math.random() * questions.length);
-    document.getElementById('questions').innerHTML = questions[randomQuestion];
-    
-}
-    loadQuestion(); 
-
-
-
-// 'Question: Who is the fashion designer in The Incredibles?'
-// // Answer: Edna Mode.
-// ,
-
-// 'Question: Which Full House character voices Aladdin?'
-// // Answer: Steve.
-// ,
-
-// 'Question: What name does Mulan pick for herself while pretending to be a man?'
-// // Answer: Ping.
-// ,
-
-// 'Question: What is the name of Prince Eric’s dog in The Little Mermaid?'
-// // Answer: Max.
