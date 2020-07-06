@@ -8,14 +8,23 @@
 </head>
 <body>
     
-    <div id='startGame'>
+    <!-- <div id='startGame'>
         <button id='start' onclick='initialize()'>Start Game</button>
-    </div>
+        
+    </div> -->
    
     <div class="parent">
 
-    <div class="header"> 
+    <div id="startGame"> 
             <h1>Erica's Trivia Game</h1>
+            <p><h3>Welcome! Choose which player</h3></p>
+            <br>
+            <button onclick="display()"><h4>Player One</h4></button>
+            <button onclick="GameStart.setPlayer('Player2')"><h4>Player Two</h4></button><br><br>
+            
+                <button id='start' onclick='initialize()'>Start Game</button>
+                
+           
     </div>
 
     <div class="quiz">
@@ -41,6 +50,7 @@
                 <p id="answer3"></p>
             
             <button onclick="choice()">Submit</button>
+                <p id="submit"></p>
             
     </div>
 

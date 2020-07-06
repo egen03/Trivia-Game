@@ -32,7 +32,7 @@ console.log('working')
 
 // Start Game button functionality 
 
-let start = document.getElementById('start');
+let start = document.getElementById('startGame');
 
 function initialize() {
    
@@ -47,6 +47,58 @@ function initialize() {
 function resetGame() {
     document.location.reload(true);
 }
+// ------------------------------------------------------
+
+
+
+var a;
+
+function hide() {
+    if (a == 1){
+        document.getElementById('header').style.display='inline';
+        return a = 0;
+    } else {
+        document.getElementById('header').style.display='none';
+        return a = 1;
+    }
+}
+// let Player1 = {
+//     constructor (name, click){
+//         this.name = name;
+//         this.click = click;
+//     }
+
+//     display() {
+//         console.log()alert(`${this.name}` + ' goes first!')
+//     }
+// }
+
+// display();
+
+// class Player2 {
+//     constructor (name, click){
+//         this.name = name;
+//         this.click = click;
+//     }
+// }
+
+// let GameStart = {
+//     gameStart: function(classType){
+//         this.setPlayer(classType);
+//     },
+//     setPlayer: function(classType) {
+//         switch (classType) {
+//             case 'Player1':
+//                 player1 = new Player1(classType);
+//                 break;
+//             case 'Player2':
+//                 player2 = new Player2(classType);
+//                 break;
+                
+//         }
+//     }
+// }
+
 // ------------------------------------------------------
 
 // Create questions. Use array for creating multiple questions as an object.
@@ -94,25 +146,25 @@ loadQuestion();
 // Submit answer choice. See which choice is checked using .checked keyterm
 
 function choice() {
-     for (var i = 0; i < 5; i++) {
-         if(document.getElementById('answer' + i).checked){ // if answer is checked
-             var answer = document.getElementById('answer' + i).value;
+        
+     for (var i = 0; i < 4; i++) {
+         if(document.getElementById('option' + i).checked){ // if answer is checked
+             var answer = document.getElementById('option' + i).value;
          } 
  }
 
 //  Create conditions to check if answer choices are right or wrong
 
-         if(randomQuestion === 0) { // question in array 0
-             if(answers === 1){  // correct answer is choice in index 1
-             document.getElementById('results').innerHtml = alert('Correct')
-         } else {
-            document.getElementById('results').innerHtml = alert('Wrong');
+    if(randomQuestion == 0) { // question in array 0
+         if(answers == 1){  // correct answer is choice in index 1
+            document.getElementById('submit').innerHtml = alert('Correct');
+         }else {
+        document.getElementById('submit').innerHtml = alert('Wrong');
+      }
+    }
 
-        }
-        }
-
-        if(randomQuestion === 1) {
-            if(answers === 0){
+    if(randomQuestion == 1) {
+            if(answers == 0){
                 document.getElementById('results').innerHtml = alert('Correct');
             } else {
                 document.getElementById('results').innerHtml = alert('Wrong');
@@ -120,112 +172,58 @@ function choice() {
         }
         }
 
-        if(randomQuestion === 2) {
-            if(answers === 2){
-                document.getElementById('results').innerHtml = alert('Correct')
-            } else {
-                document.getElementById('results').innerHtml = alert('Wrong')
-
-            }
-            }
-        if(randomQuestion === 3) {
-            if(answers === 3){
-                document.getElementById('results').innerHtml = alert('Correct')
-            } else {
-                document.getElementById('results').innerHtml = alert('Wrong')
+    if(randomQuestion == 2) {
+                if(answers == 2){
+                    document.getElementById('results').innerHtml = alert('Correct');
+                } else {
+                    document.getElementById('results').innerHtml = alert('Wrong');
     
-            }
-            }
-        if(randomQuestion === 4) {
-            if(answers === 0){
-                document.getElementById('results').innerHtml = alert('Correct')
-            } else {
-                document.getElementById('results').innerHtml = alert('Wrong')
-        
-            }
-            }
+                }
+                }
 
-        if(randomQuestion === 5) {
-            if(answers === 2){
-                document.getElementById('results').innerHtml = alert('Correct')
-            } else {
-                document.getElementById('results').innerHtml = alert('Wrong')
+                if(randomQuestion == 3) {
+                        if(answers == 3){
+                            document.getElementById('results').innerHtml = alert('Correct');
+                        } else {
+                            document.getElementById('results').innerHtml = alert('Wrong');
+                
+                        }
+                        }
+
+                if(randomQuestion == 4) {
+                    if(answers == 0){
+                document.getElementById('results').innerHtml = alert('Correct');
+                    } else {
+                document.getElementById('results').innerHtml = alert('Wrong');
+        
+                        }
+                        }
+
+                if(randomQuestion == 5) {
+                    if(answers == 2){
+                document.getElementById('results').innerHtml = alert('Correct');
+                    } else {
+                document.getElementById('results').innerHtml = alert('Wrong');
             
-            }
-            }
+                    }
+                    }
+    
+
 
 }
 
+// -----------------------------------------------
+
+// function to switch turns and set win conditions
+// let Player1 = 'Me'
+// let Player2 = 'You'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Classes for Player 1 
-
-// class Player1 {
-//     constructor() {
-
-//     }
-
-// method to choose answer
-    // selectAnswer () {
-    //     if (answer === true) {
-    //         return correct;
-    //     } else {
-    //         return wrong;
-    //     }
-    // }
-
-// method to click answer
-    // function clickEvent() {
-    //     let answer = 'true'
-    //     document.getElementById('a').innerHTML = alert('Correct');
-        
-    // }
-
-//  method to switch turns
-//     switchTurns() {}
-
-// }
 
 // -----------------------------------------------------------
 
 
-// Class for Player 2
-
-// class Player2 {
-//     constructor() {
-
-//     }
-
-// // method to choose answer
-//     chooseAnswer() {
-
-//     }
-// }
-// --------------------------------------------------------
-
-// how i will switch turns:
-
-// let player1Turn
-
-// function switchTurns() {
-//     player1Turn = !player1Turn
-    
-// }
 
 
 
-https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
+// https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
