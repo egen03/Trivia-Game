@@ -9,11 +9,9 @@ console.log('working')
 //      - 3. Use array to store quiz questions
 //      - 4. Use math.floor to load questions in random order
 // 5. Create answers.
-//      - 6. Used nested arrays to store answers.
+//      - 6. Used for loop to generate random answer options
+// 7. Submit answers to keep score.
 
-// 1. Create classes for Player 1, Player 2, answering questions right or wrong*, next question
-// 2. Create methods for getting question right or wrong.
-// 3. Create loops for multiple choice conditions
 // 4. Create way to log results to keep score
 // 5. Create way to alternate between players
 // 6. Create way to reset game/
@@ -30,7 +28,7 @@ console.log('working')
 // 2. Animate right and wrong choice selections
 
 
-// ----------------------------------------------------------------------------------
+// -------------------------------------------------------------
 
 // Start Game button functionality 
 
@@ -41,34 +39,9 @@ function initialize() {
     start.style.display = 'none'
     
 }
-// -----------------------------------------------------------------------------
-
-// Button functionality
-// function answer1() {
-//     let answer = alert('right')
-//     document.getElementById('a').innerHTML = answer;
-    
-// }
-
-function answer2() {
-    let answer = alert('wrong')
-    document.getElementById('a').innerHTML = answer;
-    
-}
-
-function answer3() {
-    let answer = alert('wrong')
-    document.getElementById('a').innerHTML = answer;
-    
-}
-
-function answer4() {
-    let answer = alert('wrong')
-    document.getElementById('a').innerHTML = answer;
-    
-}
 
 //-------------------------------------------------------
+
 // Reset button functionality
 
 function resetGame() {
@@ -96,7 +69,9 @@ var answers = [
     ['Sebastian', 'Scuttles', 'Max', 'Flounder']
 ];
 
-// Create a function to be able to load question. Use math.random
+// ------------------------------------------------------
+
+// Create a function to be able to show questions randomly. Use math.random
 
 var randomQuestion = 0;
 
@@ -116,29 +91,16 @@ function loadQuestion() {
 loadQuestion(); 
 //--------------------------------------------------------------
 
-// Create a nested array for answers
+// Submit answer choice. See which choice that was chosen is right/wrong
 
-// var answers = [
-//     ['No Problem', 'No Worries', 'No Trouble', 'No Drama'],
-//     ['Five', 'Eight', 'Three', 'Six'],
-//     ['Edna Mose', 'Mrs. Incredible', 'Edna Mode', 'Edna Mule'],
-//     ['Kimmy', 'D.J.', 'Stephanie', 'Steve'],
-//     ['Ping', 'Lee', 'Mushu', 'Poe'],
-//     ['Sebastian', 'Scuttles', 'Max', 'Flounder']
-// ];
-
-function Answers() {
-    var randomAnswer = Math.floor(Math.random() * (answers.length));
-    document.getElementById('answerA').innerHTML = answers[randomAnswer];
+function submit() {
+    for (var i = 0; i < 4; i++) {
+        if(document.getElementById('answer' + i).submited){
+            var answer = document.getElementById('option' + i). value;
+        } 
+}
     
 }
-
-// ----------------------------------------
-
-// function check() {
-//     var 
-// }
-
 // answers();
 // // Create ability to keep score
 // let score = 0;
