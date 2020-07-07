@@ -1,8 +1,8 @@
-#start{
+/* #start{
     position: center;
     font-size: 20px;
 
-}
+} */
 
 .parent{
     display: grid;
@@ -11,10 +11,11 @@
     margin: 0;
 }
 
+
 #startGame{
-    border: red solid;
+    
     padding: 20px;
-    background-color: red;
+    background-color: #f72585;
     
  
 }
@@ -25,19 +26,19 @@
 }
 
 .quiz{
-    border: steelblue solid;
+    
     padding: 20px;
-    background-color: steelblue;
+    background-color: #7209b7;
 }
 
 .answers{
-    border: tan solid;
     padding: 20px;
+    background-color: #3a0ca3;
 }
 
 .score{
-    border: tomato solid;
     padding: 20px;
+    background-color: #4361ee;
 }
 
 

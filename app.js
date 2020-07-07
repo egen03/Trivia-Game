@@ -54,7 +54,8 @@ let start = document.getElementById('startGame');
 function initialize() {
    
     start.style.display = 'none'
-    
+    document.getElementById('quiz').style.display = 'none';
+        document.getElementById('answers').style.display = 'none';
 }
 
 //-------------------------------------------------------
@@ -62,22 +63,38 @@ function initialize() {
 // Reset button functionality
 
 function resetGame() {
-    document.location.reload(true);
+    loadQuestion();
+
 }
 // ------------------------------------------------------
 
+// var a;
 
-var a;
+// function hide() {
+//     if (a == 1){
+//         document.getElementById('header').style.display='inline';
+//         return a = 0;
+//     } else {
+//         document.getElementById('header').style.display='none';
+//         return a = 1;
+//     }
+// }
 
-function hide() {
-    if (a == 1){
-        document.getElementById('header').style.display='inline';
-        return a = 0;
-    } else {
-        document.getElementById('header').style.display='none';
-        return a = 1;
-    }
-}
+
+// .quiz hide onload
+// .answer hide on load
+// .score hide on load
+// play again show after last question
+
+
+// function hideQuiz() {
+//     if(document.getElementById('start').clicked ){
+//         document.getElementById('quiz').style.display = 'none';
+//     } else {
+//         document.getElementById('quiz').style.display = 'block';
+//     }
+// }
+
 
 
 // ------------------------------------------------------
@@ -140,7 +157,7 @@ var score = 0;
 var randomQuestion = 0; //Define outside of loadquestion function so i can use it in choice function
 
 function loadQuestion() {
-    let randomQuestion = Math.floor(Math.random() * questions.length);
+    randomQuestion = Math.floor(Math.random() * questions.length);
     document.getElementById('questions').innerHTML = questions[randomQuestion];
 
 // Create loop to generate random answer options of the questions array
@@ -157,11 +174,13 @@ loadQuestion();
 
 // Submit answer choice. See which choice is checked using .checked keyterm
 
+
+
 function choice() {
         
      for (var i = 0; i < 4; i++) {
          if(document.getElementById('option' + i).checked){ // if answer is checked
-             var answer = document.getElementById('option' + i).value;
+             var answers = i; //document.getElementById('option' + i).value
          } 
  }
 
@@ -178,54 +197,55 @@ function choice() {
 
     if(randomQuestion == 1) {
             if(answers == 0){
-                document.getElementById('results').innerHtml = alert('Correct');
+                document.getElementById('submit').innerHtml = alert('Correct');
                 score++;
             } else {
-                document.getElementById('results').innerHtml = alert('Wrong');
+                document.getElementById('submit').innerHtml = alert('Wrong');
 
         }
         }
 
     if(randomQuestion == 2) {
                 if(answers == 2){
-                    document.getElementById('results').innerHtml = alert('Correct');
+                    document.getElementById('submit').innerHtml = alert('Correct');
                     score++;
                 } else {
-                    document.getElementById('results').innerHtml = alert('Wrong');
+                    document.getElementById('submit').innerHtml = alert('Wrong');
     
                 }
                 }
 
                 if(randomQuestion == 3) {
                         if(answers == 3){
-                            document.getElementById('results').innerHtml = alert('Correct');
+                            document.getElementById('submit').innerHtml = alert('Correct');
                             score++;
                         } else {
-                            document.getElementById('results').innerHtml = alert('Wrong');
+                            document.getElementById('submit').innerHtml = alert('Wrong');
                 
                         }
                         }
 
                 if(randomQuestion == 4) {
                     if(answers == 0){
-                        document.getElementById('results').innerHtml = alert('Correct');
+                        document.getElementById('submit').innerHtml = alert('Correct');
                         score++;
                     } else {
-                        document.getElementById('results').innerHtml = alert('Wrong');
+                        document.getElementById('submit').innerHtml = alert('Wrong');
         
                         }
                         }
 
                 if(randomQuestion == 5) {
                     if(answers == 2){
-                        document.getElementById('results').innerHtml = alert('Correct');
+                        document.getElementById('submit').innerHtml = alert('Correct');
                         score++;
                     } else {
-                        document.getElementById('results').innerHtml = alert('Wrong');
+                        document.getElementById('submit').innerHtml = alert('Wrong');
             
                     }
                     }
-    
+                    
+                    document.getElementById('results').innerText = `Score:  ${score}`;
 
 
 }
