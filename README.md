@@ -10,9 +10,10 @@ Game Choice - Trivia Game PsuedoCode Instructions
 Answer as many questions as you can correctly. Player with the most questions right wins.
 
 # Unsolved problems
-How do i alternate between turns?
 
-I was not able to create a way for the quiz game to toggle back and forth between players.
+1. I was not able to create a way for the quiz game to toggle back and forth between players.
+
+2. I was not able to spend a lot of time of design. I would have liked to design buttons and choose better colors.
 
 # Live Site Link
 
