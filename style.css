@@ -3,15 +3,30 @@
     font-size: 20px;
 
 } */
+body {
+    font-family: 'Fondamento', cursive;
+    color: rgb(218, 208, 223);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px;
+}
 
 .parent{
     display: grid;
     height: 150vh;
     width: auto;
     margin: 0;
+    grid-gap: 20px;
 }
 
+.one{
+    background-color: #3a0ca3;
+}
 
+.two{
+    background-color: #3a0ca3;
+
+}
 #startGame{
     
     padding: 20px;
@@ -29,16 +44,20 @@
     
     padding: 20px;
     background-color: #7209b7;
+    border-radius: 10px;
 }
 
 .answers{
     padding: 20px;
     background-color: #3a0ca3;
+    border-radius: 10px;
+    
 }
 
 .score{
     padding: 20px;
     background-color: #4361ee;
+    border-radius: 10px;
 }
 
 

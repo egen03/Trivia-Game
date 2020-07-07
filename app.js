@@ -54,49 +54,16 @@ let start = document.getElementById('startGame');
 function initialize() {
    
     start.style.display = 'none'
-    document.getElementById('quiz').style.display = 'none';
-        document.getElementById('answers').style.display = 'none';
 }
 
 //-------------------------------------------------------
 
-// Reset button functionality
+// Reset button functionality. Will load next question.
 
 function resetGame() {
     loadQuestion();
 
 }
-// ------------------------------------------------------
-
-// var a;
-
-// function hide() {
-//     if (a == 1){
-//         document.getElementById('header').style.display='inline';
-//         return a = 0;
-//     } else {
-//         document.getElementById('header').style.display='none';
-//         return a = 1;
-//     }
-// }
-
-
-// .quiz hide onload
-// .answer hide on load
-// .score hide on load
-// play again show after last question
-
-
-// function hideQuiz() {
-//     if(document.getElementById('start').clicked ){
-//         document.getElementById('quiz').style.display = 'none';
-//     } else {
-//         document.getElementById('quiz').style.display = 'block';
-//     }
-// }
-
-
-
 // ------------------------------------------------------
 
 // Create questions. Use array for creating multiple questions as an object.
@@ -250,13 +217,6 @@ function choice() {
 
 }
 
-// -----------------------------------------------
-
-// Score
-
-
-
-// -----------------------------------------------------------
 
 
 

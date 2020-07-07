@@ -11,8 +11,11 @@ Answer as many questions as you can correctly. Player with the most questions ri
 
 # Unsolved problems
 How do i alternate between turns?
-how do i log the results?
-how to reset game?
+
+I was not able to create a way for the quiz game to toggle back and forth between players.
+
+# Live Site Link
+
 
 A README.md file with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems,
 
