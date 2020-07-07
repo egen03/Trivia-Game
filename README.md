@@ -16,7 +16,6 @@ Answer as many questions as you can correctly. Player with the most questions ri
 2. I was not able to spend a lot of time of design. I would have liked to design buttons and choose better colors.
 
 # Live Site Link
-https://elegant-lichterman-455993.netlify.app
-
+https://gracious-kepler-04c952.netlify.app
 
 
